@@ -1,0 +1,63 @@
+Name: Hang Dong
+USC NetID: donghang
+CS 455 PA4
+FALL 2018
+
+----------------------------------------------
+CERTIFY IT'S YOUR WORK
+
+"I certify that the work submitted for this assignment does not
+violate USC's student conduct code.  In particular, the work is my
+own, not a collaboration, and does not involve code created by other
+people, except for the the resources explicitly mentioned in the CS 455
+Course Syllabus.  And I did not share my solution or parts of it with
+other students in the course."
+
+Initial below to "sign" the above statement:
+
+Hang Dong
+----------------------------------------------
+ACKNOWLEDGE ANY OUTSIDE SOURCES
+
+List here any code you submitted for this assignment that was written
+with significant help of a course staff member, or code used from the
+textbook.  Be specific about what methods or algorithms are involved,
+and what sections of the textbook are involved (if applicable): [you do
+not need to list any of the code that we wrote for the assignment,
+i.e., the contents of the starter files for the assignment]
+
+
+
+----------------------------------------------
+KNOWN BUGS or LIMITATIONS:
+
+
+
+----------------------------------------------
+DESCRIPTION OF YOUR CLASS DESIGN AND ALGORITHMS AND DATA STRUCTURES USED:
+
+general design:
+Preprocessing the dictionary so that built up the word dictionary firstly. Then for each rack I generate all the subsets of that multiset of letters, and for each subset add all the words from the dictionary that have exactly the same elements as that subset. Finally I use ScoreTable to calculate each case's score.
+
+ScoreTable class: 
+ data structure: HashMap
+ this class is designed to creat a object, which can calculate all cores of the input words(strings). There is a hard-coded map of letters. the method GetScore() can iterally calculate current letter's score and sum them up.
+Rack class:
+ data structure: HashMap, ArrayList
+ this class is designed to generate all valid racks of current letters set, includes the count of each letter to make sure there may be some subset  can have more than one of specific letter.
+AnagramDictionary class:
+ data structure: HashMap, ArrayList
+ this class is designed to get all words in the input file and build up dictionary organizing the words by the set of letters each one contains (this set is actually a multiset, because letters can appear more than once in a word; the rack itself is also a multiset). the getAnagramsOf() method can find all words that suitble for current string.
+WordFinder class:
+ data structure: ArrayList, HashMap
+ this class is designed that include main method of this project, the main() method scan input from console and revert all uppercase letters to lowercase, then call getRack() method to get all racks. main() method also check the dictionary file and change all input chracters to lowercase.
+ output() method designed to receive all racks from main() and call AnagramDictionary object and ScoreTable() object to get the final result.
+----------------------------------------------
+ANY OTHER NOTES FOR THE GRADER:
+
+
+
+
+
+
+

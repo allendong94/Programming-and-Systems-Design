@@ -1,0 +1,69 @@
+Name: HANG DONG
+USC NetID: donghang
+CS 455 PA1
+Fall 2018
+
+----------------------------------------------
+CERTIFY IT'S YOUR WORK
+
+"I certify that the work submitted for this assignment does not
+violate USC's student conduct code.  In particular, the work is my
+own, not a collaboration, and does not involve code created by other
+people, except for the the resources explicitly mentioned in the CS 455
+Course Syllabus.  And I did not share my solution or parts of it with
+other students in the course."
+
+Initial below to "sign" the above statement:
+
+HANG DONG
+----------------------------------------------
+ACKNOWLEDGE ANY OUTSIDE SOURCES
+
+List here any code you submitted for this assignment that was written
+with significant help of a course staff member, or code used from the
+textbook.  Be specific about what methods or algorithms are involved,
+and what sections of the textbook are involved (if applicable): [you do
+not need to list any of the code that we wrote for the assignment,
+i.e., the contents of the starter files for the assignment]
+
+
+HANG DONG
+----------------------------------------------
+KNOWN BUGS or LIMITATIONS:
+
+
+#1: When the window's width is so small the three labels will overlap with each other.
+----------------------------------------------
+ANY OTHER NOTES FOR THE GRADER:
+
+
+
+----------------------------------------------
+ANSWERS TO ASSIGNMENT README QUESTIONS (if applicable):
+1. In CS 455 what code from the web are you allowed to use in your assignment solution, assuming you modify that
+code once you get it? (No clue? Hint: Reread the syllabus.) Note: no need to mention the "starter files" for the
+assignment in your answer.
+
+The outside code resources students will be allowed to use in assignments for this class are limited to code written by the course staff for the purposes of helping students in the course, or code from the textbook for this course.
+
+2. What is the probability of each of the three outcomes in a trial: two heads, one head and one tail, and two tails? Why
+is one of them different than the other two?
+
+ (1)P(two heads):25%; (2)P(two tails):25%; (3)P(one head and one tail):50%;
+the reason P(one head and one tail) is higher is its probability equation is: 0.5*0.5+0.5*0.5; the other two's probability equation is 0.5*o.5;
+
+3. Roughly how many trials do you need to do before you mostly get results within 1% of these probabilities? Do
+several simulations using your program to determine an answer to this.
+
+about 5000 trails.
+
+4. Roughly how many trials can you do before it crashes with an overflow error? State the largest value you tried where
+it still worked correctly, and one where it overflowed. You can get an idea of what general values to try by looking at
+the limits on Java integers (see Section 4.1.1 of the text). Play around with your program to verify that it actually
+works for very large values that are within the limits. Note: this kind of testing can sometimes turn up bugs, so it's
+good to do. Warning: For very large values you may have to wait a fair amount of time before you get the results.
+
+ the result is: 2147483647
+
+
+
